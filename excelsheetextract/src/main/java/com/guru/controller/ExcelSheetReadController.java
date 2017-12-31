@@ -21,9 +21,9 @@ public class ExcelSheetReadController {
 
 	@RequestMapping(value="/",method=RequestMethod.GET)
 	public String enter(Model model,HttpSession session) {
-		return "redirect:/excelExtract";
+		return "redirect:/excelread";
 	}
-	@RequestMapping(value="/excelExtract")
+	@RequestMapping(value="/excelread")
 	public String getFile(Model model,HttpSession session) {
 		return "fileupload";
 	}
